@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Clientes</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/oficina/gateway/solicitacao/periodoCaixa">Caixa<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Clientes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/oficina/gateway/cliente/cadastrar">Novo</a>
+                        <a class="dropdown-item" href="/oficina/gateway/cliente/buscarEspecifico">Buscar</a>
+                        <a class="dropdown-item" href="/oficina/gateway/cliente/listar">Lista Geral</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Peças
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/oficina/gateway/peca/cadastrar">Nova</a>
+                        <a class="dropdown-item" href="/oficina/gateway/peca/buscarEspecifico">Buscar</a>
+                        <a class="dropdown-item" href="/oficina/gateway/peca/listar">Lista Geral</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reparos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/oficina/gateway/clientes/solicitacoes/orcamento">Novo</a>
+                        <a class="dropdown-item" href="/oficina/gateway/clientes/solicitacoes/selecionar">Buscar</a>
+                        <a class="dropdown-item" href="/oficina/gateway/solicitacao/selecionarPeriodo">Buscar Por Período</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<style>
+	.form-row {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.form-group{
+		margin-right: 20px;
+		margin-left: 20px;
+		width: 2600px;
+    		height: 140px;
+     		font-family: verdana;
+	}
+
+</style>
+
+
+<form method="post" class="needs-validation" novalidate action="#"
+      th:action="@{/oficina/gateway/solicitacao/atualizar/{id}(id=${solicitacao.id})}"
+      th:object="${solicitacao}">
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="modeloCarro" >Modelo Carro</label>
+            <input type="text" th:field="*{modeloCarro}" id="modeloCarro" class="form-control" name="modeloCarro" value="" required = false>
+            <div class="valid-feedback">
+                Ok!
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="placaCarro">Placa Carro</label>
+            <input type="text" class="form-control" th:field="*{placaCarro}" id="placaCarro"name="placaCarro" value="" required=" false">
+            <div class="valid-feedback">
+                Ok!
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="cpfCliente">CPF Cliente</label>
+            <input type="text" class="form-control" th:field="*{cpfCliente}" name="cpfCliente" id="cpfCliente" required>
+            <div class="invalid-feedback">
+                CPF não encontrado! Cadastre o cliente antes, ou digite novamente.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="status">Status Reparo</label>
+            <select class="form-control" th:field="*{status}" name="status" id="status" required>
+                <option selected disabled value="">Escolher...</option>
+                <option value="Consultando Orçamento">Consultando Orçamento</option>
+                <option value="Aguardando Peças">Aguardando Peças</option>
+                <option value="Reparando Veículo">Reparando Veículo</option>
+                <option value="Finalizado">Finalizado</option>
+            </select>
+            <div class="invalid-feedback">
+                Por favor, selecione o satus.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="valorServicos">Valor Serviços</label>
+            <input type="text" class="form-control" th:field="*{valorServicos}" name="valorServicos" id="valorServicos" required>
+            <div class="invalid-feedback">
+                Por favor, digite uma valor.
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label for="valorPecas">Valor Peças</label>
+            <input type="text" class="form-control" th:field="*{valorPecas}" name="valorPecas" id="valorPecas" required>
+            <div class="invalid-feedback">
+                Por favor, digite uma valor.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="listaPeca">Peças Utilizadas</label>
+            <textarea class="form-control" th:field="*{listaPeca}" name="listaPeca" id="listaPeca" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="listaServico">Serviços Realizados</label>
+            <textarea class="form-control" th:field="*{servico}" name="listaServico" id="listaServico" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="servicoAdicional">Serviços Adicionais</label>
+            <textarea class="form-control" th:field="*{servicoAdicional}" name="listaServicoAdicional" id="servicoAdicional" rows="3"></textarea>
+        </div>
+    </div>
+    <button class="btn btn-primary" style="margin-top: 10px; margin-left: 360px; margin-right: 150px; width: 260px;"
+            type="submit">Salvar
+    </button>
+</form>
+
+
+<script>
+	(function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
+}
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})();
+</script>
+</body>
+</html>

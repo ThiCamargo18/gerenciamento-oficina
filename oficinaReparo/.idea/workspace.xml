@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1f86be8-fee3-45ef-a69a-256530fa9e01" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aDkwFprJAth1h01Gjnyyb3cg6Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../oficinaCliente/pom.xml" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.itau.oficina.index" />
+      <recent name="br.com.itau.oficina.solicitacao.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ThiagoCamargodaSilva\Desktop\oficina\oficinaReparo\src\main\resources" />
+      <recent name="C:\Users\ThiagoCamargodaSilva\Desktop\oficina\oficinaReparo\src\main\java\br\com\itau\oficina\clienteSolicitacao" />
+      <recent name="C:\Users\ThiagoCamargodaSilva\Desktop\oficina\oficinaReparo\src\main\java\br\com\itau\oficina\cliente" />
+      <recent name="C:\Users\ThiagoCamargodaSilva\Desktop\protótipo_final\oficina\oficinaReparo\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean jacoco:prepare-agent install jacoco:report" />
+      <command value="mvn clean" />
+      <command value="mvn install" />
+      <command value="mvn compile" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.OficinaReparoApplication">
+    <configuration name="OficinaReparoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.itau.oficina.OficinaReparoApplication" />
+      <module name="oficinaReparo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.itau.oficina.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in oficinaReparo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oficinaReparo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolicitacaoFacadeTest.deveBuscarPorPeriodoException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oficinaReparo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.itau.oficina.solicitacao.facade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.itau.oficina.solicitacao.facade" />
+      <option name="MAIN_CLASS_NAME" value="br.com.itau.oficina.solicitacao.facade.SolicitacaoFacadeTest" />
+      <option name="METHOD_NAME" value="deveBuscarPorPeriodoException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolicitacaoMapperTest.deveConverterEntityToSaida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oficinaReparo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.itau.oficina.solicitacao.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.itau.oficina.solicitacao.mapper" />
+      <option name="MAIN_CLASS_NAME" value="br.com.itau.oficina.solicitacao.mapper.SolicitacaoMapperTest" />
+      <option name="METHOD_NAME" value="deveConverterEntityToSaida" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolicitacaoMapperTest.deveConverterMapToEntityList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oficinaReparo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.itau.oficina.solicitacao.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.itau.oficina.solicitacao.mapper" />
+      <option name="MAIN_CLASS_NAME" value="br.com.itau.oficina.solicitacao.mapper.SolicitacaoMapperTest" />
+      <option name="METHOD_NAME" value="deveConverterMapToEntityList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OficinaReparoApplication" />
+        <item itemvalue="JUnit.All in oficinaReparo" />
+        <item itemvalue="JUnit.SolicitacaoFacadeTest.deveBuscarPorPeriodoException" />
+        <item itemvalue="JUnit.SolicitacaoMapperTest.deveConverterMapToEntityList" />
+        <item itemvalue="JUnit.SolicitacaoMapperTest.deveConverterEntityToSaida" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1f86be8-fee3-45ef-a69a-256530fa9e01" name="Default Changelist" comment="" />
+      <created>1586277788084</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586277788084</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586370037864">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1586370037864" />
+    <state x="2012" y="222" width="840" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586788537178">
+      <screen x="1920" y="130" width="1024" height="728" />
+    </state>
+    <state x="2012" y="222" width="840" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1586788537178" />
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1590616132934">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590616132934" />
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1586546145967" />
+    <state x="2257" y="233" key="FileChooserDialogImpl" timestamp="1590605645330">
+      <screen x="1920" y="130" width="1024" height="728" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590094936434" />
+    <state x="2257" y="233" key="FileChooserDialogImpl/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590605645330" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1590348772073" />
+    <state width="1237" height="217" key="GridCell.Tab.0.bottom" timestamp="1590622639374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="217" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590622639374" />
+    <state width="981" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590539736080" />
+    <state width="1237" height="377" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590355042122" />
+    <state width="1237" height="217" key="GridCell.Tab.0.center" timestamp="1590622639374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="217" key="GridCell.Tab.0.center/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590622639374" />
+    <state width="981" height="204" key="GridCell.Tab.0.center/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590539736080" />
+    <state width="1237" height="377" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590355042122" />
+    <state width="1237" height="217" key="GridCell.Tab.0.left" timestamp="1590622639374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="217" key="GridCell.Tab.0.left/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590622639374" />
+    <state width="981" height="204" key="GridCell.Tab.0.left/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590539736080" />
+    <state width="1237" height="377" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590355042122" />
+    <state width="1237" height="217" key="GridCell.Tab.0.right" timestamp="1590622639374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="217" key="GridCell.Tab.0.right/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590622639374" />
+    <state width="981" height="204" key="GridCell.Tab.0.right/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590539736080" />
+    <state width="1237" height="377" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590355042122" />
+    <state width="1237" height="186" key="GridCell.Tab.1.bottom" timestamp="1590601548999">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="186" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590601548999" />
+    <state width="981" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590539736080" />
+    <state width="1237" height="187" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590355042118" />
+    <state width="1237" height="186" key="GridCell.Tab.1.center" timestamp="1590601548999">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="186" key="GridCell.Tab.1.center/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590601548999" />
+    <state width="981" height="204" key="GridCell.Tab.1.center/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590539736080" />
+    <state width="1237" height="187" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1590355042118" />
+    <state width="1237" height="186" key="GridCell.Tab.1.left" timestamp="1590601548999">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="186" key="GridCell.Tab.1.left/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590601548999" />
+    <state width="981" height="204" key="GridCell.Tab.1.left/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590539736080" />
+    <state width="1237" height="187" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1590355042118" />
+    <state width="1237" height="186" key="GridCell.Tab.1.right" timestamp="1590601548999">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="186" key="GridCell.Tab.1.right/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590601548999" />
+    <state width="981" height="204" key="GridCell.Tab.1.right/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590539736080" />
+    <state width="1237" height="187" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1590355042118" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1590600987595">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590600987595" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1590601237113">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590601237113" />
+    <state x="1920" y="169" key="new project wizard" timestamp="1586367193795">
+      <screen x="1920" y="130" width="1024" height="728" />
+    </state>
+    <state x="91" y="36" key="new project wizard/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1586357172473" />
+    <state x="1920" y="169" key="new project wizard/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1586367193795" />
+    <state x="2158" y="292" width="672" height="725" key="run.anything.popup" timestamp="1590606400540">
+      <screen x="1920" y="130" width="1024" height="728" />
+    </state>
+    <state x="297" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1590601245530" />
+    <state x="2158" y="292" width="672" height="725" key="run.anything.popup/0.0.1280.680/1920.130.1024.728@1920.130.1024.728" timestamp="1590606400540" />
+    <state x="298" y="151" width="840" height="678" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1586619147576" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1586542760567">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.130.1024.728@0.0.1280.680" timestamp="1586353994173" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1586542760567" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/itau/oficina/solicitacao/controller/SolicitacaoControllerTest.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/br/com/itau/oficina/solicitacao/facade/SolicitacaoFacadeTest.java</url>
+          <line>173</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/itau/oficina/index/IndexController.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="solicitacao.dataEntrada" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

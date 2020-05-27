@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Novo Cliente</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote-bs4.js"></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/oficina/gateway/solicitacao/periodoCaixa">Caixa<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Clientes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/oficina/gateway/cliente/cadastrar">Novo</a>
+                        <a class="dropdown-item" href="/oficina/gateway/cliente/buscarEspecifico">Buscar</a>
+                        <a class="dropdown-item" href="/oficina/gateway/cliente/listar">Lista Geral</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Peças
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/oficina/gateway/peca/cadastrar">Nova</a>
+                        <a class="dropdown-item" href="/oficina/gateway/peca/buscarEspecifico">Buscar</a>
+                        <a class="dropdown-item" href="/oficina/gateway/peca/listar">Lista Geral</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reparos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/oficina/gateway/clientes/solicitacoes/orcamento">Novo</a>
+                        <a class="dropdown-item" href="/oficina/gateway/clientes/solicitacoes/selecionar">Buscar</a>
+                        <a class="dropdown-item" href="/oficina/gateway/solicitacao/selecionarPeriodo">Buscar Por Período</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<style>
+	#divBusca{
+  margin-left: 90px;
+  background-color:#E0EEEE;
+  border:solid 2px #5F9EA0;
+  border-radius:10px;
+  width:300px;
+  height:32px;
+}
+
+#txtbusca{
+  float:left;
+  margin-left: 450px;
+  margin-top: 10px;
+  background-color:transparent;
+  padding-left:5px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:191px;
+}
+
+#btnBusca{
+  border:none;
+margin-top: 10px;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background:#5F9EA0;
+}
+
+#divBusca img{
+  float:left;
+}
+</style>
+<div id='busca'>
+    <form action="atualizar" class="search" method="get">
+        <input id="txtbusca" name="cpf" type="text" value="" placeholder="Buscar outra" />
+        <input id="btnBusca" type="submit" value="Ok"/>
+    </form>
+</div>
+<div class="container my-5">
+    <h3> Atualizar Peça</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="col-md-8">
+                <form action="#"
+                      th:action="@{/oficina/gateway/peca/atualizar/{id}(id=${especifica.id})}"
+                      th:object="${especifica}" method="post">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="nome" class="col-form-label">Nome</label> <input
+                                type="text" th:field="*{nome}" class="form-control" id="nome"
+                                placeholder="Nome">
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="valor" class="col-form-label">Valor</label> <input
+                                type="text" th:field="*{valor}" class="form-control" id="valor"
+                                placeholder="Valor">
+                        </div>
+                        <div class="form-group col-md-8">
+                            <input type="submit" class="btn btn-primary"
+                                   value="Atualizar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
